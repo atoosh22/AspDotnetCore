@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awasome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+         *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.myside{
+    background-color: #252159;
+    color: white;
+   
+}
+.btn{
+    border: 0;
+    outline: 0;
+    font-size: 22px;
+}
+.btn:hover{
+    outline: #252159;
+}
+
+/* end slide bar */
+
+.myheader{
+    background-color: #58C6D3;
+}
+.login{
+    background-color: red;
+}
+
+ .head{
+    background-color: #58C6D3;
+    justify-content: space-between;
+ }
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 40px;
+    align-items: center;
+    padding: 10px;
+    
+}
+.nav a{
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+.myside .btn:hover{
+   background-color:  #58C6D3;
+   color: red;
+}
+
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+button{
+   background-color: #58C6D3;
+   border: 2px solid #fff;
+   outline: none;
+   color: #fff;
+   padding: 8px;
+  
+}
+
+
+.card1{
+    background-color: #58C6D3;
+    
+    
+}
+.card2 , .no{
+    background-color: #252159;
+   
+}
+.card2:hover{
+background-color: #58C6D3;
+opacity: 60%;
+}
+.card1:hover{
+    background-color: #252159;
+    color: white;
+    opacity: 80%;
+}
+
+
+    </style>
+    </style>
+
+</head>
+<body>
+    
+<div class="d-flex">
+      <!-- side bar -->
+   <div class="vh-100 myside" style="width: 12rem">
+  <div>
+    <img class="w-50 " src="img/logo2.png" alt="">
+  </div>
+
+  <div class="mt-3">
+    <button class="btn text-white">
+        <i class=" hover fa-solid fa-table-columns text-white px-1"></i>
+        <a href="index.html" class="link">Dashboard</a>
+      </button>
+      <!-- dashboard -->
+      
+      <button class="btn text-white">
+     <i class="fa-solid fa-graduation-cap px-1"></i> 
+     <a href="Student.html" class="link">Students</a>
+      </button>
+      <!-- students -->
+      
+      <button class="btn text-white">
+        <i class="fa-solid fa-person-chalkboard px-1"></i>
+        <a href="Teacher.html" class="link"> Teachers</a>
+      </button>
+      <!-- teachers -->
+    
+      <button class="btn text-white">
+        <i class="fa-solid fa-book-open-reader px-1"></i>
+        <a href="Courses.html" class="link"> Courses</a>
+      </button>
+      <!-- coursed -->
+      <button class="btn text-white">
+        <i class="fa-solid fa-pen px-1"></i>
+        <a href="classes.html"class="link">Classes</a>
+      </button>
+      <!-- regestration -->
+    
+      <button class="btn text-white">
+        <i class="fa-solid fa-user px-1"></i>
+        <a href="users.html"class="link">Users</a>
+      </button>
+      <!-- users -->
+      <button class="btn text-white">
+        <i class="fa-solid fa-right-from-bracket px-1"></i>
+        <a href="logout.html" class="link"> Logout</a>
+      </button>
+      <!-- Logout -->
+  </div>
+  
+   </div>
+     <!-- End  side bar -->
+
+     <!-- Header -->
+   <div class=" w-100">
+       <div class="head">
+          
+           <div class="nav" >
+             <i class="fa-solid fa-bars text-white" ></i>
+            <a  href="#">Class List</a>
+           
+           </div>
+       </div>
+        <!-- End Header -->
+
+        <!-- contant section --> 
+          <!-- card0 -->
+          <div class="m-5" >
+         
+          <!-- card1 -->
+         <div class="m-5" >
+            <div class="row">
+                <div class="col-sm-1 col-md-4 pt-3 ">
+                    <div class="card p-3 card1 text-white">
+                        <div class="card-body">
+                         ClassName: <span class="text-primary ">Form four </span> <br>
+                           TotalStudent: <span class="text-primary ">40 </span> <br> <br>
+                            ClassLeval : <span class="text-primary ">Sare </span> <br>  
+                        </div>
+                         <!-- End Card1 -->
+                    </div>
+            </div>   
+            <!-- card2 -->
+            <div class="col-sm-1 col-md-4 pt-3">
+                <div class="card p-3 card2 text-white">
+                    <div class="card-body">
+                        ClassName: <span class="text-primary ">Form two </span> <br>
+                        TotalStudent: <span class="text-primary ">50 </span> <br> <br>
+                         ClassLeval : <span class="text-primary ">Sare </span> <br> 
+                    </div>
+                </div>
+                  <!-- End Card2 -->
+        </div>
+          <!-- card3 -->  
+        <div 
+        
+        class="col-sm-1 col-md-4 pt-3">
+            <div class="card p-3 card1 text-white">
+                <div class="card-body">
+                    ClassName: <span class="text-primary "> six </span> <br>
+                    TotalStudent: <span class="text-primary ">70 </span> <br> <br>
+                     ClassLeval : <span class="text-primary ">dhexe </span> <br> 
+                </div>
+            </div>
+    </div>  
+    <!-- End Card3 -->
+    <div class="col-sm-1 col-md-4 pt-3">
+         <!-- card4 -->  
+        <div class="card p-3 card2 text-white">
+            <div class="card-body">
+                ClassName: <span class="text-primary "> four </span> <br>
+                TotalStudent: <span class="text-primary ">40 </span> <br> <br>
+                 ClassLeval : <span class="text-primary ">Hoose </span> <br> 
+            </div>
+        </div>
+</div> <!-- End Card4 -->
+
+<div class="col-sm-1 col-md-4 pt-3">
+      <!-- card5 -->
+    <div class="card p-3 card1 text-white">
+        <div class="card-body">
+            ClassName: <span class="text-primary "> Two </span> <br>
+            TotalStudent: <span class="text-primary ">60 </span> <br> <br>
+             ClassLeval : <span class="text-primary ">Hoose </span> <br> 
+        </div>
+    </div>
+</div>  <!-- End Card5 -->
+<div class="col-sm-1 col-md-4 pt-3">
+     <!-- card6 -->
+    <div class="card p-3 card2 text-white">
+        <div class="card-body">
+            ClassName: <span class="text-primary ">Form Tree </span> <br>
+            TotalStudent: <span class="text-primary ">64 </span> <br> <br>
+             ClassLeval : <span class="text-primary ">Sare </span> <br> 
+        </div>
+    </div>
+</div> <!-- End Card6 -->
+<div class="col-sm-1 col-md-4 pt-3">
+    <!-- card7 -->
+    <div class="card p-3 card1 text-white">
+        <div class="card-body">
+            ClassName: <span class="text-primary ">Five </span> <br>
+            TotalStudent: <span class="text-primary ">80 </span> <br> <br>
+             ClassLeval : <span class="text-primary ">Dhexe </span> <br>   
+        </div>
+    </div>
+</div><!-- End Card7 -->
+<div class="col-sm-1 col-md-4 pt-3">
+    <!-- card8 -->
+    <div class="card p-3 card2 text-white">
+        <div class="card-body">
+            ClassName: <span class="text-primary ">Eight </span> <br>
+            TotalStudent: <span class="text-primary ">25 </span> <br> <br>
+             ClassLeval : <span class="text-primary ">dhexe </span> <br> 
+        </div>
+    </div>
+</div> <!-- End Card8 -->
+<div class="col-sm-1 col-md-4 pt-3">
+       <!-- card9 -->
+    <div class="card p-3 card1 text-white">
+        <div class="card-body">
+            ClassName: <span class="text-primary ">Form One </span> <br>
+            TotalStudent: <span class="text-primary ">38 </span> <br> <br>
+             ClassLeval : <span class="text-primary ">Sare </span> <br> 
+    </div>
+</div> <!-- End Card9 -->
+
+    </div>
+</div> <!-- End Card10 -->
+
+<div class="col-sm-1 col-md-4 pt-3">
+       <!-- card9 -->
+    <div class="card p-3 card1 text-white">
+        <div class="card-body">
+            ClassName: <span class="text-primary ">Seven </span> <br>
+            TotalStudent: <span class="text-primary ">38 </span> <br> <br>
+             ClassLeval : <span class="text-primary ">Dhexe </span> <br> 
+    </div>
+</div> <!-- End Card9 -->
+
+
+
+    </div>
+
+</div>
+
+
+
+  
+   
+   </div>
+
+   <!-- end contant -->
+
+
+</div>
+
+<!-- javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

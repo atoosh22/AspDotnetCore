@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awasome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.myside{
+    background-color: #252159;
+    color: white;
+   
+}
+.btn{
+    border: 0;
+    outline: 0;
+    font-size: 22px;
+}
+.btn:hover{
+    outline: #252159;
+}
+
+/* end slide bar */
+
+.myheader{
+    background-color: #58C6D3;
+}
+.login{
+    background-color: red;
+}
+
+ .head{
+    background-color: #58C6D3;
+    justify-content: space-between;
+ }
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 40px;
+    align-items: center;
+    padding: 10px;
+    
+}
+.nav a{
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+.myside .btn:hover{
+   background-color:  #58C6D3;
+   color: red;
+}
+
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+button{
+   background-color: #58C6D3;
+   border: 2px solid #fff;
+   outline: none;
+   color: #fff;
+   padding: 8px;
+  
+}
+
+
+    </style>
+</head>
+<body>
+    
+<div class="d-flex">
+      <!-- side bar -->
+   <div class="vh-100 myside" style="width: 12rem">
+  <div>
+    <img class="w-50 " src="img/logo2.png" alt="">
+  </div>
+
+  <div class="mt-3">
+    <button class="btn text-white">
+        <i class=" hover fa-solid fa-table-columns text-white px-1"></i>
+        <a href="index.html" class="link">Dashboard</a>
+      </button>
+      <!-- dashboard -->
+      
+      <button class="btn text-white">
+     <i class="fa-solid fa-graduation-cap px-1"></i> 
+      <a href="Student.html" class="link">Students</a>
+      </button>
+      <!-- students -->
+      
+      <button class="btn text-white">
+        <i class="fa-solid fa-person-chalkboard px-1"></i>
+      <a href="Teacher.html" class="link"> Teachers</a>
+      </button>
+      <!-- teachers -->
+    
+      <button class="btn text-white">
+        <i class="fa-solid fa-book-open-reader px-1"></i>
+        <a href="Courses.html" class="link"> Courses</a>
+      </button>
+      <!-- coursed -->
+      <button class="btn text-white">
+        <i class="fa-solid fa-pen px-1"></i>
+        <a href="classes.html"class="link">Classes</a>
+      </button>
+      <!-- regestration -->
+    
+      <button class="btn text-white">
+        <i class="fa-solid fa-user px-1"></i>
+        <a href="users.html"class="link">Users</a>
+      </button>
+      <!-- users -->
+      <button class="btn text-white">
+        <i class="fa-solid fa-right-from-bracket px-1"></i>
+        <a href="logout.html" class="link"> Logout</a>
+      </button>
+      <!-- Logout -->
+  </div>
+  
+   </div>
+     <!-- End  side bar -->
+
+     <!-- Header -->
+   <div class=" w-100">
+       <div class="myheader">
+          
+           <div class="nav" >
+            <a  href="#">Students</a>
+           
+          
+            <button  data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add Student</button>
+          
+           </div>
+       </div>
+        <!-- End Header -->
+
+        <!-- contant sections -->
+  
+
+        <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"> Add New student</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form action="" class="form-group ">
+        <!-- Id -->
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">#</span>
+          <input type="text" class="form-control" placeholder="Enter Id" aria-label="Id" aria-describedby="basic-addon1">
+        </div>
+              <!-- Name -->
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Enter Student Name" aria-label="Name" aria-describedby="basic-addon1">
+        </div>
+              <!-- Tell -->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-mobile"></i></span>
+                <input type="tel" class="form-control" placeholder="Enter Tell" aria-label="Tell" aria-describedby="basic-addon1">
+              </div>
+              <!-- Adress -->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-location-dot"></i></span>
+                <input type="text" class="form-control" placeholder="Enter Adress" aria-label="Adress" aria-describedby="basic-addon1">
+              </div>
+              <!-- DOB -->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-calendar-days"></i></span>
+                <input type="text" class="form-control" placeholder="Enter Date of Birth" aria-label="DOF" aria-describedby="basic-addon1">
+              </div>
+              <!-- POB -->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-calendar-days"></i></span>
+                <input type="text" class="form-control" placeholder="Enter Place of Birth" aria-label="BOF" aria-describedby="basic-addon1">
+              </div>
+              <!-- Gurdian tell -->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-mobile"></i></span>
+                <input type="text" class="form-control" placeholder="Enter GURDIAN-TELL" aria-label="Gurdian-tel" aria-describedby="basic-addon1">
+              </div>
+              <!-- fee -->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-money-check-dollar"></i></span>
+                <input type="text" class="form-control" placeholder="Enter Fee" aria-label="Fee" aria-describedby="basic-addon1">
+              </div>
+              <!-- class Id -->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-brands fa-discourse"></i></span>
+                <input type="text" class="form-control" placeholder="Enter Class_Id" aria-label="Class_id" aria-describedby="basic-addon1">
+              </div>
+
+
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="card2" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="button">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="m-5">
+
+          <table class="table table-Striped">
+            <thead>
+              <tr>
+                <th>#ID</th>
+                <th>Name</th>
+                <th>TELL</th>
+                <th>ADDRESS</th>
+                <th>DOF</th>
+                <th>POB</th>
+                <th>GURDIAN-TELL</th>
+                <th>FEE</th>
+                <th>CLASS-ID</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1010</td>
+                <td>Atoosh Mohamed Nor</td>
+                <td>614944045</td>
+                <td>Baar-ubah</td>
+                <td>2000</td>
+                <td>Galdogob</td>
+                <td>613684862</td>
+                <td>$45.00</td>
+                <td>3333</td>
+              </tr>
+              <tr>
+                <td>1011</td>
+                <td>Sumayo mohamed ali</td>
+                <td>612567890</td>
+                <td>Dayniile</td>
+                <td>1999</td>
+                <td>mogadishu</td>
+                <td>613119080</td>
+                <td>$45.00</td>
+                <td>3310</td>
+              </tr>
+              <tr>
+                <td>1012</td>
+                <td>Mohamed Ali hasan</td>
+                <td>614943012</td>
+                <td>Hodan</td>
+                <td>2000</td>
+                <td>Mogadishu</td>
+                <td>615764862</td>
+                <td>$42.00</td>
+                <td>3333</td>
+              </tr>
+              <tr>
+                <td>1013</td>
+                <td>Muna Jamac xuseen</td>
+                <td>614893245</td>
+                <td>Holwadaag</td>
+                <td>2003</td>
+                <td>Garoowe</td>
+                <td>612682362</td>
+                <td>$37.00</td>
+                <td>3310</td>
+              </tr>
+            </tbody>
+            </tr>
+          </table>
+    
+
+  </div>
+   
+
+   
+   </div>
+
+   <!-- end contant -->
+    
+
+
+</div>
+
+<!-- javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
